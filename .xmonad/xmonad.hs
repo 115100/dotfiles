@@ -4,7 +4,7 @@ import XMonad.Util.EZConfig
 
 main = do
     xmonad $ desktopConfig {
-        terminal = "urxvt"
+        terminal = "urxvtc"
     } `additionalKeys` extraKeys
 
 extraKeys =
