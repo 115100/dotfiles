@@ -1,0 +1,7 @@
+# required by app-admin/ego-1.0.1::gentoo
+# required by @system
+# required by @world (argument)
+# /usr/portage/profiles/package.mask/funtoo-python:
+=dev-lang/python-3.5.2
+
+=dev-python/keepassx-9999

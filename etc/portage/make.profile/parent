@@ -1,0 +1,7 @@
+gentoo:funtoo/1.0/linux-gnu/arch/x86-64bit
+gentoo:funtoo/1.0/linux-gnu/build/current
+gentoo:funtoo/1.0/linux-gnu/arch/x86-64bit/subarch/intel64-sandybridge
+gentoo:funtoo/1.0/linux-gnu/flavor/desktop
+gentoo:funtoo/1.0/linux-gnu/mix-ins/no-systemd
+gentoo:funtoo/1.0/linux-gnu/mix-ins/python3-only
+gentoo:funtoo/1.0/linux-gnu/mix-ins/audio

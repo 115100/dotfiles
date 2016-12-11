@@ -1,0 +1,44 @@
+# User-defined USE flags
+
+## Python 2.7
+>=dev-libs/newt-0.52.18 python_targets_python2_7
+>=net-libs/libproxy-0.4.13 python_targets_python2_7
+>=media-libs/alsa-lib-1.1.2 python_targets_python2_7
+>=sys-apps/usbutils-007 python_targets_python2_7
+>=dev-vcs/git-2.10.2 python_targets_python2_7
+>=app-text/asciidoc-8.6.9 python_single_target_python2_7 python_targets_python2_7
+>=dev-vcs/mercurial-4.0.1 python_targets_python2_7
+>=dev-vcs/subversion-1.9.5 python_targets_python2_7
+>=dev-util/scons-2.5.1 python_targets_python2_7
+
+## Other
+app-editors/vim lua python ruby
+net-misc/networkmanager -ppp -modemmanager
+x11-misc/xmobar xft
+
+# Dependency USE flags
+
+# required by sys-auth/consolekit-1.0.1::gentoo
+# required by sys-auth/polkit-0.113-r1::gentoo[-systemd]
+# required by net-misc/networkmanager-1.4.2::gentoo
+# required by networkmanager (argument)
+>=dev-libs/glib-2.48.2 dbus
+# required by www-client/chromium-55.0.2883.75::gentoo
+# required by www-client/chromium (argument)
+>=media-libs/libvpx-1.6.0-r1 svc
+# required by x11-libs/libxkbcommon-0.7.0::gentoo[X]
+# required by @preserved-rebuild (argument)
+>=x11-libs/libxcb-1.12-r2 xkb
+# required by media-libs/fontconfig-infinality-20130404::gentoo
+# required by media-libs/fontconfig-ultimate-2015.08.01::gentoo
+# required by media-fonts/infinality-ultimate-meta-1::gentoo
+# required by media-fonts/infinality-ultimate-meta (argument)
+>=media-libs/freetype-2.6.5 infinality
+# required by dev-qt/qtcore-5.6.2-r1::gentoo
+# required by net-misc/seafile-client-5.1.4::seafile-stefaba
+# required by seafile-client (argument)
+>=dev-libs/libpcre-8.39 pcre16
+# required by app-admin/keepass-2.34::gentoo
+# required by app-admin/keepass (argument)
+>=dev-dotnet/libgdiplus-4.2-r2 cairo
+>=dev-lang/mono-4.8 minimal

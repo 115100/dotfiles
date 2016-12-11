@@ -1,0 +1,30 @@
+URxvt.termName: rxvt-256color
+URxvt.perl-ext-common:  default,tabbed
+URxvt.tabbed.tabbar-fg: 235
+URxvt.tabbed.tabbar-bg: 234
+URxvt.tabbed.tab-fg:    237
+URxvt.tabbed.tab-bg:    234
+URxvt.scrollBar        : true
+URxvt.scrollBar_right  : true
+URxvt.scrollstyle      : plain
+URxvt.scrollColor      : #333333
+URxvt.font             : xft:inconsolata:pixelsize=16
+URxvt.depth            : 32
+URxvt.background       : #1C1C1C
+URxvt.foreground       : #D0D0D0
+URxvt.color0           : #121212
+URxvt.color8           : #0A0A0A
+URxvt.color1           : #D78787
+URxvt.color9           : #DF8787
+URxvt.color2           : #AFD787
+URxvt.color10          : #AFDF87
+URxvt.color3           : #F7F7AF
+URxvt.color11          : #FFFFAF
+URxvt.color4           : #87AFD7
+URxvt.color12          : #87AFDF
+URxvt.color5           : #D7AFD7
+URxvt.color13          : #DFAFDF
+URxvt.color6           : #AFD7D7
+URxvt.color14          : #AFDFDF
+URxvt.color7           : #E6E6E6
+URxvt.color15          : #EEEEEE
