@@ -12,6 +12,7 @@ app-portage/eix
 app-portage/gentoolkit
 app-portage/layman
 app-text/calibre
+dev-lang/go
 dev-lang/python
 dev-libs/libappindicator
 dev-libs/sni-qt

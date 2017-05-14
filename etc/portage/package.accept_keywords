@@ -7,6 +7,7 @@ sys-fs/zfs-kmod ~amd64
 sys-kernel/spl ~amd64
 
 app-emulation/qemu ~amd64
+dev-lang/go ~amd64
 dev-lang/python:3.5
 mail-client/thunderbird ~amd64
 media-video/mpv ~amd64
@@ -88,3 +89,7 @@ www-client/firefox ~amd64
 =sys-apps/linux-misc-apps-4.4-r1 ~amd64
 # required by net-analyzer/openbsd-netcat (argument)
 =net-analyzer/openbsd-netcat-1.105-r1 ~amd64
+# required by media-fonts/infinality-ultimate-meta-1::gentoo[l10n_ja,free,-minimal]
+# required by @selected
+# required by @world (argument)
+=media-fonts/koruri-20141224 ~amd64
