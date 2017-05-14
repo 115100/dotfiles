@@ -1,0 +1,5 @@
+# required by dev-java/oracle-jre-bin (argument)
+>=dev-java/oracle-jre-bin-1.8.0.131 Oracle-BCLA-JavaSE
+# required by www-plugins/freshplayerplugin-0.3.5-r2::gentoo
+# required by www-plugins/freshplayerplugin (argument)
+>=www-plugins/adobe-flash-25.0.0.148 AdobeFlash-11.x

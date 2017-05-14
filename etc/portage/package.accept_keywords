@@ -1,0 +1,90 @@
+# Personal options
+
+# NEED THESE TO BOOT
+sys-boot/grub ~amd64
+sys-fs/zfs ~amd64
+sys-fs/zfs-kmod ~amd64
+sys-kernel/spl ~amd64
+
+app-emulation/qemu ~amd64
+dev-lang/python:3.5
+mail-client/thunderbird ~amd64
+media-video/mpv ~amd64
+net-p2p/qbittorrent ~amd64
+www-client/firefox ~amd64
+
+# Portage reqs
+
+# required by veracrypt (argument)
+=app-crypt/veracrypt-1.19 ~amd64
+# required by syncplay (argument)
+=media-video/syncplay-1.4.0 ~amd64
+# required by media-fonts/noto-cjk (argument)
+=media-fonts/noto-cjk-20150615 ~amd64
+# required by seafile-client (argument)
+=net-misc/seafile-client-6.0.4-r2 ~amd64
+# required by net-misc/seafile-client-6.0.4-r2::gentoo
+# required by seafile-client (argument)
+=net-misc/seafile-6.0.4 ~amd64
+# required by net-misc/seafile-client-6.0.4-r2::gentoo
+# required by seafile-client (argument)
+=net-libs/ccnet-6.0.4 ~amd64
+# required by net-misc/seafile-client-6.0.4-r2::gentoo
+# required by seafile-client (argument)
+=net-libs/libsearpc-3.0.8-r1 ~amd64
+# required by keepassxc (argument)
+=app-admin/keepassxc-2.1.4 ~amd64
+# required by media-fonts/infinality-ultimate-meta (argument)
+=media-fonts/infinality-ultimate-meta-1 ~amd64
+# required by media-fonts/infinality-ultimate-meta-1::gentoo[free]
+# required by media-fonts/infinality-ultimate-meta (argument)
+=media-fonts/heuristica-0.2.1 ~amd64
+# required by media-fonts/infinality-ultimate-meta-1::gentoo[latin,free]
+# required by media-fonts/infinality-ultimate-meta (argument)
+=media-fonts/courier-prime-1.203 ~amd64
+# required by media-fonts/infinality-ultimate-meta-1::gentoo
+# required by media-fonts/infinality-ultimate-meta (argument)
+=media-libs/fontconfig-ultimate-2015.08.01 ~amd64
+# required by media-fonts/infinality-ultimate-meta-1::gentoo[latin,free]
+# required by media-fonts/infinality-ultimate-meta (argument)
+=media-fonts/signika-1.001 ~amd64
+# required by media-fonts/infinality-ultimate-meta-1::gentoo[latin,free]
+# required by media-fonts/infinality-ultimate-meta (argument)
+=media-fonts/tex-gyre-2.005 ~amd64
+# required by app-text/ghostscript-gpl-9.20-r1::gentoo
+# required by net-print/cups-filters-1.5.0::gentoo
+# required by net-print/cups-2.1.4::gentoo
+# required by dev-qt/qtgui-4.8.6-r4::gentoo[cups]
+# required by dev-qt/designer-4.8.6-r1::gentoo
+# required by kde-plasma/qguiplatformplugin_kde-4.11.22::gentoo
+# required by kde-plasma/plasma-desktop-5.8.6::gentoo[qt4]
+# required by kde-plasma/plasma-meta-5.8.6::gentoo
+# required by @selected
+# required by @world (argument)
+=media-libs/libpng-1.6.29 ~amd64
+# required by x11-misc/shutter (argument)
+=x11-misc/shutter-0.93.1-r3 ~amd64
+# required by dev-python/requests-toolbelt (argument)
+=dev-python/requests-toolbelt-0.7.1 ~amd64
+# required by dev-python/clint-0.5.1::gentoo
+# required by dev-python/clint (argument)
+=dev-python/args-0.1.0 ~amd64
+# required by dev-python/clint (argument)
+=dev-python/clint-0.5.1 ~amd64
+# required by media-sound/deadbeef-0.7.2-r1::deadbeef-overlay
+# required by media-sound/deadbeef (argument)
+=media-plugins/deadbeef-plugins-meta-1 ~amd64
+# required by media-sound/deadbeef (argument)
+=media-sound/deadbeef-0.7.2-r1 ~amd64
+# required by app-emulation/qemu-2.9.0-r53::gentoo[-qemu_softmmu_targets_i386,pin-upstream-blobs,qemu_softmmu_targets_x86_64]
+# required by @selected
+# required by @world (argument)
+=sys-firmware/seabios-1.10.2 ~amd64
+# required by app-emulation/qemu-2.9.0-r53::gentoo[-qemu_softmmu_targets_i386,pin-upstream-blobs,qemu_softmmu_targets_x86_64]
+# required by @selected
+# required by @world (argument)
+=sys-firmware/edk2-ovmf-2017_pre20170505 ~amd64
+# required by linux-misc-apps (argument)
+=sys-apps/linux-misc-apps-4.4-r1 ~amd64
+# required by net-analyzer/openbsd-netcat (argument)
+=net-analyzer/openbsd-netcat-1.105-r1 ~amd64
