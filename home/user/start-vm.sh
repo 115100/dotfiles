@@ -1,12 +1,12 @@
 #!/bin/sh
 set -euo pipefail
 
-PS4_CONTROLLER=$(lsusb | grep 'Sony Corp')
+PS4_CONTROLLER=$(lsusb | grep '054c:09cc')
 hostbus=$(echo ${PS4_CONTROLLER} | awk '{ print $2 }' | cut -b3)
 hostaddr=$(echo ${PS4_CONTROLLER} | awk '{ print $4 }' | cut -b3)
 
 export QEMU_AUDIO_DRV="alsa"
-eval qemu-system-x86_64 \
+qemu-system-x86_64 \
     -serial none \
     -parallel none \
     -enable-kvm \
