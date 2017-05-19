@@ -66,4 +66,5 @@ www-plugins/freshplayerplugin
 x11-apps/setxkbmap
 x11-apps/xmodmap
 x11-apps/xrandr
+x11-misc/xautolock
 x11-misc/xclip
