@@ -581,3 +581,9 @@
 # required by dev-libs/libappindicator-12.10.0-r301::gentoo
 # required by dev-libs/libappindicator (argument)
 >=dev-libs/libdbusmenu-12.10.2-r2 gtk3
+# required by games-roguelike/adom-1.1.1-r1::gentoo
+# required by games-roguelike/adom (argument)
+>=sys-libs/ncurses-5.9-r101:5 abi_x86_32
+# required by media-video/aegisub-3.2.2_p20160518-r2::gentoo
+# required by aegisub (argument)
+>=dev-lang/luajit-2.0.4 lua52compat

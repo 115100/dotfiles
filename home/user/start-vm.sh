@@ -12,7 +12,7 @@ qemu-system-x86_64 \
     -enable-kvm \
     -name Windows \
     -bios /usr/share/edk2-ovmf/OVMF.fd \
-    -m 16384 \
+    -m 8192 \
     -cpu host,kvm=off,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time,hv_vendor_id=12CHARID \
     -smp 12,sockets=1,cores=6,threads=2 \
     -drive file=/home/user/win-qemu.img,id=disk,format=raw,if=none -device ide-hd,drive=disk \

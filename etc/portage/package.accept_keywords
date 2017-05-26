@@ -10,7 +10,9 @@ app-emulation/qemu ~amd64
 dev-lang/go ~amd64
 dev-lang/python:3.5
 mail-client/thunderbird ~amd64
+media-video/mkvtoolnix ~amd64
 media-video/mpv ~amd64
+net-irc/hexchat ~amd64
 net-p2p/qbittorrent ~amd64
 www-client/firefox ~amd64
 
@@ -93,3 +95,7 @@ www-client/firefox ~amd64
 # required by @selected
 # required by @world (argument)
 =media-fonts/koruri-20141224 ~amd64
+# required by nethack (argument)
+=games-roguelike/nethack-3.6.0-r3 ~amd64
+# required by net-print/samsung-unified-driver (argument)
+=net-print/samsung-unified-driver-1.00.37 ~amd64

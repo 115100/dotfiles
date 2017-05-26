@@ -28,6 +28,6 @@
 #LABEL=swap		none		swap		sw		0 0
 #/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
 
-UUID=9007-F528	/boot/efi	vfat	defaults,noauto	1	1
+UUID=BB60-3F84	/boot/efi	vfat	defaults,noauto	1	1
 tmpfs	/tmp	tmpfs rw,nosuid,noatime,nodev,size=4G,mode=1777	0	0
 /dev/zvol/rpool/swap	none	swap	sw	0	0

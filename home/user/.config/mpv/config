@@ -17,6 +17,9 @@ audio-pitch-correction=no
 audio-normalize-downmix=yes
 volume-max=100
 
+alang=jpn,jp,eng,en
+slang=eng,en
+
 cache=auto
 cache-default=2000000
 cache-backbuffer=1000000
