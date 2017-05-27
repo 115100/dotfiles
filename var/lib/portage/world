@@ -10,6 +10,9 @@ app-misc/tmux
 app-portage/eix
 app-portage/gentoolkit
 app-portage/layman
+app-shells/gentoo-zsh-completions
+app-shells/zsh
+app-shells/zsh-completions
 app-text/calibre
 dev-lang/go
 dev-lang/python
