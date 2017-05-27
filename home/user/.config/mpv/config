@@ -12,6 +12,7 @@ video-sync=display-resample
 osc=no
 
 blend-subtitles=yes
+keep-open=always
 
 audio-pitch-correction=no
 audio-normalize-downmix=yes
