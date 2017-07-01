@@ -29,5 +29,8 @@
 #/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
 
 UUID=BB60-3F84	/boot/efi	vfat	defaults,noauto	1	1
-tmpfs	/tmp	tmpfs rw,nosuid,noatime,nodev,size=4G,mode=1777	0	0
+
+hugetlbfs	/hugepages	hugetlbfs	mode=1770,gid=kvm,size=100%,min_size=100%	0	0
+tmpfs	/tmp	tmpfs rw,nosuid,noatime,nodev,size=6G,mode=1777	0	0
+
 /dev/zvol/rpool/swap	none	swap	sw	0	0

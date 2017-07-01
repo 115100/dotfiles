@@ -27,3 +27,7 @@ bindkey "^[[3~" delete-char
 __git_files () {
     _wanted files expl 'local files' _files
 }
+
+# Env vars
+export PATH="$PATH:$HOME/bin:/sbin:/usr/sbin"
+eval `keychain --eval --agents ssh id_rsa`

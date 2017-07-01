@@ -10,6 +10,7 @@ app-emulation/qemu ~amd64
 dev-lang/go ~amd64
 dev-lang/python:3.5
 mail-client/thunderbird ~amd64
+media-sound/cantata::pg_overlay **
 media-video/mkvtoolnix ~amd64
 media-video/mpv ~amd64
 net-irc/hexchat ~amd64
@@ -99,3 +100,79 @@ www-client/firefox ~amd64
 =games-roguelike/nethack-3.6.0-r3 ~amd64
 # required by net-print/samsung-unified-driver (argument)
 =net-print/samsung-unified-driver-1.00.37 ~amd64
+# required by =games-rpg/runescape-launcher-2.2.4 (argument)
+=games-rpg/runescape-launcher-2.2.4 ~amd64
+# required by net-im/skype (argument)
+=net-im/skype-4.3.0.37-r6 ~amd64
+# required by app-emulation/vagrant-1.9.5::gentoo[ruby_targets_ruby22]
+# required by app-emulation/vagrant (argument)
+=dev-ruby/listen-3.1.5 ~amd64
+# required by app-emulation/vagrant-1.9.5::gentoo[ruby_targets_ruby22]
+# required by app-emulation/vagrant (argument)
+=dev-ruby/rake-12.0.0 ~amd64
+# required by app-emulation/vagrant-1.9.5::gentoo[ruby_targets_ruby22]
+# required by app-emulation/vagrant (argument)
+=dev-ruby/childprocess-0.7.0 ~amd64
+# required by app-emulation/vagrant-1.9.5::gentoo[ruby_targets_ruby22]
+# required by app-emulation/vagrant (argument)
+=dev-ruby/net-ssh-4.1.0 ~amd64
+# required by app-emulation/vagrant-1.9.5::gentoo[ruby_targets_ruby22]
+# required by app-emulation/vagrant (argument)
+=dev-ruby/hashicorp-checkpoint-0.1.4-r1 ~amd64
+# required by dev-ruby/listen-3.1.5::gentoo[ruby_targets_ruby21]
+# required by app-emulation/vagrant-1.9.5::gentoo[ruby_targets_ruby22]
+# required by app-emulation/vagrant (argument)
+=dev-ruby/rb-inotify-0.9.8 ~amd64
+# required by dev-ruby/listen-3.1.5::gentoo[ruby_targets_ruby22]
+# required by app-emulation/vagrant-1.9.5::gentoo[ruby_targets_ruby22]
+# required by app-emulation/vagrant (argument)
+=dev-ruby/ruby_dep-1.5.0 ~amd64
+# required by app-emulation/vagrant-1.9.5::gentoo[ruby_targets_ruby22]
+# required by app-emulation/vagrant (argument)
+=dev-ruby/net-scp-1.2.1 ~amd64
+# required by app-emulation/vagrant-1.9.5::gentoo[ruby_targets_ruby22]
+# required by app-emulation/vagrant (argument)
+=dev-ruby/i18n-0.7.0-r2 ~amd64
+# required by app-emulation/vagrant (argument)
+=app-emulation/vagrant-1.9.5 ~amd64
+# required by app-emulation/vagrant-1.9.5::gentoo[ruby_targets_ruby22]
+# required by app-emulation/vagrant (argument)
+=dev-ruby/nokogiri-1.7.2 ~amd64
+# required by net-irc/hexchat-2.12.4-r2::gentoo[libressl,ssl]
+# required by @selected
+# required by @world (argument)
+=dev-libs/libressl-2.5.4 ~amd64
+# required by app-editors/sublime-text (argument)
+=app-editors/sublime-text-3126 ~amd64
+# required by net-im/skypeforlinux (argument)
+=net-im/skypeforlinux-5.3.0.1 ~amd64
+# required by www-client/chromium-59.0.3071.86::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/nspr-4.15 ~amd64
+# required by dev-util/cargo-0.17.0::gentoo
+=dev-lang/rust-1.16.0 ~amd64
+# required by net-misc/networkmanager-1.4.4-r1::gentoo[nss]
+# required by kde-frameworks/networkmanager-qt-5.34.0::gentoo
+# required by kde-plasma/powerdevil-5.8.6::gentoo[wireless]
+# required by kde-plasma/plasma-meta-5.8.6::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/nss-3.31 ~amd64
+# required by dev-lang/rust-1.16.0::gentoo
+# required by www-client/firefox-54.0::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-util/cargo-0.17.0 ~amd64
+# required by www-client/qutebrowser-0.9.1::gentoo
+# required by www-client/qutebrowser (argument)
+=dev-python/pypeg2-2.15.2 ~amd64
+# required by www-client/qutebrowser-0.9.1::gentoo
+# required by www-client/qutebrowser (argument)
+=dev-python/pygments-2.2.0 ~amd64
+# required by www-client/qutebrowser (argument)
+=www-client/qutebrowser-0.9.1 ~amd64
+# required by cantata (argument)
+=media-sound/cantata-2.0.1-r1 ~amd64
+# required by app-benchmarks/phoronix-test-suite (argument)
+=app-benchmarks/phoronix-test-suite-9999 ~amd64

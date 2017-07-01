@@ -1,0 +1,47 @@
+#!/usr/bin/env python
+import os
+import subprocess
+
+ARGS = [
+    'qemu-system-x86_64',
+    '-serial', 'none',
+    '-parallel', 'none',
+    '-enable-kvm',
+    '-name', 'Windows',
+    '-bios', '/usr/share/edk2-ovmf/OVMF.fd',
+    '-m', '16384',
+    '-mem-prealloc',
+    '-mem-path', '/hugepages',
+    '-cpu', 'host,kvm=off,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time,hv_vendor_id=12CHARID',
+    '-smp', '12,sockets=1,cores=6,threads=2',
+    '-drive', 'file=/home/user/win-qemu.img,id=disk,format=raw,if=none',
+    '-device', 'ide-hd,drive=disk',
+    '-device', 'secondary-vga',
+    '-device', 'vfio-pci,host=01:00.0,addr=09.0,multifunction=on',
+    '-device', 'vfio-pci,host=01:00.1',
+    '-rtc', 'base=localtime',
+    '-soundhw', 'ac97',
+    '-vga', 'none',
+]
+
+if __name__ == '__main__':
+    usb_attached = False
+
+    usb_devices = subprocess.check_output(['lsusb'])
+
+    usb_args = []
+    for l in usb_devices.split(b'\n'):
+        # Sony
+        if b'054c:09cc' in l:
+            usb_attached = True
+
+            pts = l.split(b' ')
+            usb_args.extend(['-device', 'usb-host,hostbus={},hostaddr={}'.format(int(pts[1]), int(pts[3][:-1]))])
+
+    if usb_attached:
+        ARGS.extend(['-usb'])
+        ARGS.extend(usb_args)
+
+    os.putenv('QEMU_AUDIO_DRV', 'alsa')
+    print(' '.join(ARGS))
+    subprocess.run(ARGS)

@@ -4,3 +4,4 @@ xrandr --output DVI-I-0 --primary --mode 2560x1440 --pos 0x0 --rotate normal --o
 xautolock -time 30 -locker "qdbus org.kde.screensaver /ScreenSaver Lock" &
 /usr/bin/qbittorrent &
 /usr/bin/seafile-applet &
+/opt/skypeforlinux/skypeforlinux &
