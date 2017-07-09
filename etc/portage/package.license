@@ -9,3 +9,5 @@
 >=net-im/skype-4.3.0.37-r6 skype-4.0.0.7-copyright
 # required by app-editors/sublime-text (argument)
 >=app-editors/sublime-text-3126 Sublime
+# required by media-libs/fdk-aac (argument)
+>=media-libs/fdk-aac-0.1.5 FraunhoferFDK

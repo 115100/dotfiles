@@ -29,5 +29,5 @@ __git_files () {
 }
 
 # Env vars
-export PATH="$PATH:$HOME/bin:/sbin:/usr/sbin"
+export PATH="$PATH:$HOME/bin:/sbin:/usr/sbin:$HOME/go/bin"
 eval `keychain --eval --agents ssh id_rsa`

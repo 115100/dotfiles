@@ -25,20 +25,16 @@ ARGS = [
 ]
 
 if __name__ == '__main__':
-    usb_attached = False
-
     usb_devices = subprocess.check_output(['lsusb'])
 
     usb_args = []
     for l in usb_devices.split(b'\n'):
         # Sony
         if b'054c:09cc' in l:
-            usb_attached = True
-
             pts = l.split(b' ')
             usb_args.extend(['-device', 'usb-host,hostbus={},hostaddr={}'.format(int(pts[1]), int(pts[3][:-1]))])
 
-    if usb_attached:
+    if usb_args:
         ARGS.extend(['-usb'])
         ARGS.extend(usb_args)
 
