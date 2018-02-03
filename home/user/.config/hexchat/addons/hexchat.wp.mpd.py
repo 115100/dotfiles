@@ -9,7 +9,9 @@ __module_description__ = 'MPD currently playing script'
 
 def now_playing(*dummy):
     proc = subprocess.check_output(['mpc',
-                                    'current', '-f', '%artist% - %title% 「%album%」'])
+                                    'current',
+                                    '-h', '/var/lib/mpd/socket',
+                                    '-f', '%artist% - %title% 「%album%」'])
     hexchat.command('SAY np: ' + proc.decode('utf-8').strip())
     return hexchat.EAT_ALL
 

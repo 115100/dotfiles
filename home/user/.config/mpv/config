@@ -1,5 +1,10 @@
-profile=opengl
+vo=gpu
+profile=gpu-hq
 opengl-pbo=yes
+
+stop-screensaver=no
+
+input-ipc-server=/tmp/mpv-socket
 
 deband-iterations=2
 deband-range=12
@@ -9,17 +14,14 @@ interpolation=yes
 tscale=oversample
 video-sync=display-resample
 
-osc=no
-
-blend-subtitles=yes
+blend-subtitles=video
 keep-open=always
 
-audio-pitch-correction=no
 audio-normalize-downmix=yes
 volume-max=100
 
 alang=jpn,jp,eng,en
-slang=eng,en
+slang=jpn,jp,eng,en
 
 cache=auto
 cache-default=2000000
@@ -28,9 +30,12 @@ cache-initial=1000
 cache-seek-min=2000
 
 screenshot-directory=/tmp/screenshots
-screenshot-format=png
 screenshot-template="%F-%P"
-screenshot-png-compression=0
+screenshot-format=jpeg
+screenshot-jpeg-quality=95
+
+icc-profile-auto=yes
+icc-cache-dir=/home/user/.local/mpv/cache
 
 [UHD]
 profile-desc=cond:get('height',0) >= 2000
@@ -40,10 +45,10 @@ fullscreen=yes
 
 [HD]
 profile-desc=cond:get('height',0) < 2000 and get('height',0) >= 700
-scale=haasnsoft
-cscale=ewa_lanczos
+scale=ewa_lanczossharp
+cscale=ewa_lanczossharp
 
 [SD]
 profile-desc=cond:get('height',0) < 700
-scale=haasnsoft
-cscale=ewa_lanczossoft
+scale=ewa_lanczossharp
+cscale=ewa_lanczossharp

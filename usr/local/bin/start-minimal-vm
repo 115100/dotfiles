@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+# vim: set syntax=python:
+import os
+import subprocess
+
+ARGS = [
+    'qemu-system-x86_64',
+    '-serial', 'none',
+    '-parallel', 'none',
+    '-enable-kvm',
+    '-name', 'Windows-minimal',
+    '-bios', '/usr/share/edk2-ovmf/OVMF.fd',
+    '-m', '2048',
+    '-cpu', 'host,kvm=off,hv_relaxed,hv_spinlocks=0x1fff,hv_time,hv_vendor_id=12CHARID',
+    '-smp', '4,sockets=1,cores=2,threads=2',
+    '-drive', 'file=/home/user/win-minimal-qemu.img,id=disk,format=raw,if=none',
+    '-device', 'nec-usb-xhci',
+    '-device', 'usb-mouse',
+    '-device', 'ide-hd,drive=disk',
+    '-rtc', 'base=localtime',
+    '-soundhw', 'ac97',
+    '-vga', 'std',
+]
+
+if __name__ == '__main__':
+    os.putenv('QEMU_AUDIO_DRV', 'alsa')
+    print(' '.join(ARGS))
+    subprocess.run(ARGS)

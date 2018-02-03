@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# vim: set syntax=python:
 import os
 import subprocess
 
@@ -10,11 +11,16 @@ ARGS = [
     '-name', 'Windows',
     '-bios', '/usr/share/edk2-ovmf/OVMF.fd',
     '-m', '16384',
+    '-net', 'nic',
+    '-net', 'user,smb=/home/user/Desktop/Files/a',
     '-mem-prealloc',
     '-mem-path', '/hugepages',
-    '-cpu', 'host,kvm=off,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time,hv_vendor_id=12CHARID',
+    '-cpu', 'host,kvm=off,hv_relaxed,hv_spinlocks=0x1fff,hv_time,hv_vendor_id=12CHARID',
     '-smp', '12,sockets=1,cores=6,threads=2',
     '-drive', 'file=/home/user/win-qemu.img,id=disk,format=raw,if=none',
+    '-device', 'nec-usb-xhci',
+    '-device', 'usb-ehci,id=ehci',
+    '-device', 'usb-mouse',
     '-device', 'ide-hd,drive=disk',
     '-device', 'secondary-vga',
     '-device', 'vfio-pci,host=01:00.0,addr=09.0,multifunction=on',
@@ -29,10 +35,14 @@ if __name__ == '__main__':
 
     usb_args = []
     for l in usb_devices.split(b'\n'):
-        # Sony
+        # PS4 controller
         if b'054c:09cc' in l:
             pts = l.split(b' ')
             usb_args.extend(['-device', 'usb-host,hostbus={},hostaddr={}'.format(int(pts[1]), int(pts[3][:-1]))])
+        # iPhone 8+
+        if b'05ac:12a8' in l:
+            pts = l.split(b' ')
+            usb_args.extend(['-device', 'usb-host,bus=ehci.0,hostbus={},hostaddr={}'.format(int(pts[1]), int(pts[3][:-1]))])
 
     if usb_args:
         ARGS.extend(['-usb'])

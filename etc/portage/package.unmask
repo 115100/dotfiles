@@ -1,2 +1,5 @@
-media-sound/cantata::pg_overlay
+media-fonts/iosevka::4nykey
+media-video/get_iplayer::ikelos
 net-print/samsung-unified-driver::pg_overlay
+www-client/palemoon::palemoon
+x11-terms/alacritty::slyfox

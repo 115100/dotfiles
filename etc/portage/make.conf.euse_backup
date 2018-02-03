@@ -1,21 +1,22 @@
-# These settings were set by the catalyst build script that automatically
-# built this stage.
-# Please consult /usr/share/portage/config/make.conf.example for a more
-# detailed example.
-CFLAGS="-O3 -pipe -march=native"
+MAKEOPTS="-j25 -l25"
+CFLAGS="-march=native -O3 -pipe"
 CXXFLAGS="${CFLAGS}"
-MAKEOPTS="-j25"
-# WARNING: Changing your CHOST is not something that should be done lightly.
-# Please consult http://www.gentoo.org/doc/en/change-chost.xml before changing.
 CHOST="x86_64-pc-linux-gnu"
-# These are the USE and USE_EXPAND flags that were used for
-# buidling in addition to what is provided by the profile.
-USE="bindist -systemd"
-EMERGE_DEFAULT_OPTS="--ask --with-bdeps=y"
+
+GRUB_PLATFORMS="efi-64"
+LINGUAS="en en_US en_GB jp ja"
+L10N="en en-GB en-US jp ja"
+PYTHON_SINGLE_TARGET="python3_5"
+PYTHON_TARGETS="python2_7 python3_5"
+
+# Hardware options
 CPU_FLAGS_X86="aes avx avx2 fma3 mmx mmxext popcnt sse sse2 sse3 sse4_1 sse4_2 ssse3"
+VIDEO_CARDS="amdgpu radeonsi"
+
 PORTDIR="/usr/portage"
-LINGUAS="en en_US en_GB"
 DISTDIR="${PORTDIR}/distfiles"
 PKGDIR="${PORTDIR}/packages"
-GRUB_PLATFORMS="efi-64"
-VIDEO_CARDS="nvidia"
+
+# Global USE flags
+EMERGE_DEFAULT_OPTS="--ask --with-bdeps=y --jobs=4 --load-average=20 -v"
+USE="alsa ffmpeg icu -systemd udisks -pulseaudio"

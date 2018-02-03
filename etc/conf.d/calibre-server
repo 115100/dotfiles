@@ -10,4 +10,4 @@ CALIBRE_USER=
 
 # Extra options to pass to calibre-server.
 # See the calibre-server man page for more options.
-#CALIBRE_OPTS="--username calibre --password password --thread-pool 10 --port 8080"
+#CALIBRE_SERVER_OPTS="--userdb /srv/calibre/users.sqlite --enable-auth --worker-count 10 --port 8080"
