@@ -14,9 +14,16 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
+export PATH="$PATH:/sbin"
 
 # Put your fun stuff here.
-## Golang settings
-export GOROOT=/usr/lib/go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+alias vim=nvim
+alias sudo='sudo '
+
+export HISTCONTROL=ignoredups:erasedups
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+shopt -s histappend
+export PROMPT_COMMAND="history -a; history -n"
+
+keychain $HOME/.ssh/id_rsa

@@ -1,11 +1,5 @@
-#!/bin/sh
-xset r rate 250 30
+export TERMINAL=/usr/bin/alacritty
 
-# Set pointer speed
-xset m 1 0
+setxkbmap gb
 
-# Daemonise urxvt
-export RXVT_SOCKET="$HOME/.urxvt/urxvt$DISPLAY"
-urxvtd -q -o -f
-
-exec xmonad
+exec i3

@@ -1,2 +1,6 @@
-# required by seafile-client (argument)
-=net-misc/seafile-client-5.1.4 **
+# User-defined accept_keywords
+app-editors/neovim ~amd64
+media-video/mpv ~amd64
+x11-terms/alacritty **
+# required by tmux-bash-completion (argument)
+=app-shells/tmux-bash-completion-9999 **

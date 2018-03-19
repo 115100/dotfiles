@@ -1,7 +1,14 @@
-# required by app-admin/ego-1.0.1::gentoo
+# required by sys-apps/portage-2.3.18-r2::core-kit[python_targets_python3_5]
+# required by dev-python/appi-0.1.7::python-kit
+# required by app-admin/ego-2.3.3-r1::core-kit
 # required by @system
 # required by @world (argument)
-# /usr/portage/profiles/package.mask/funtoo-python:
-=dev-lang/python-3.5.2
-
-=dev-python/keepassx-9999
+# /var/git/meta-repo/kits/core-kit/profiles/funtoo/kits/python-kit/3.4-prime/package.mask/funtoo-kit-python:
+=dev-lang/python-3.5.3
+# required by sys-apps/portage-2.3.18-r2::core-kit[-build,python_targets_python3_6]
+# required by dev-python/appi-0.1.7::python-kit
+# required by app-admin/ego-2.3.3-r1::core-kit
+# required by @system
+# required by @world (argument)
+# /var/git/meta-repo/kits/core-kit/profiles/funtoo/kits/python-kit/3.4-prime/package.mask/funtoo-kit-python:
+=dev-lang/python-3.6.1-r2

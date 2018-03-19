@@ -1,0 +1,36 @@
+# package.use# required by x11-libs/gtk+-2.24.31::gnome-kit
+# required by www-client/firefox-bin-58.0.1::net-kit
+# required by firefox-bin (argument)
+>=x11-libs/cairo-1.14.8 X
+# required by x11-libs/gtk+-2.24.31::gnome-kit
+# required by www-client/firefox-bin-58.0.1::net-kit
+# required by firefox-bin (argument)
+>=x11-libs/gdk-pixbuf-2.36.9 X
+# required by app-office/libreoffice-bin-5.4.2.2::kde-kit
+# required by libreoffice-bin (argument)
+>=dev-libs/xmlsec-1.2.24-r1 nss
+# required by net-print/cups-filters-1.20.1::net-kit[postscript]
+# required by net-print/cups-2.2.6::net-kit
+# required by app-office/libreoffice-bin-5.4.2.2::kde-kit
+# required by libreoffice-bin (argument)
+>=app-text/ghostscript-gpl-9.21 cups
+# required by app-editors/neovim-0.2.2-r1::editors-kit
+# required by dev-python/neovim-python-client-0.1.13::python-kit
+>=dev-lua/mpack-1.0.4 luajit
+# required by app-editors/neovim-0.2.2-r1::editors-kit
+# required by dev-python/neovim-python-client-0.1.13::python-kit
+>=dev-lua/lpeg-1.0.1 luajit
+# required by x11-misc/i3lock-2.9.1::desktop-kit
+# required by i3lock (argument)
+>=x11-libs/cairo-1.14.8 xcb
+# required by x11-libs/libxkbcommon-0.7.2::xorg-kit[X]
+# required by x11-misc/i3lock-2.9.1::desktop-kit
+# required by i3lock (argument)
+>=x11-libs/libxcb-1.12-r2 xkb
+# required by layman (argument)
+>=app-portage/layman-2.4.2 -python_targets_python3_6
+# required by dev-qt/qtcore-5.9.4-r2::kde-kit
+# required by dev-qt/linguist-tools-5.9.4::kde-kit
+# required by app-admin/keepassxc-2.3.1::nokit
+# required by keepassxc (argument)
+>=dev-libs/libpcre2-10.30 pcre16
